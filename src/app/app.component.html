@@ -1,0 +1,11 @@
+<p appHighlight>  This Demo is to check attribute Directive is working!!</p>
+
+<p appMouseEvent>  This Demo is to check mouse event is working!!</p>
+
+<h2>Pick a highlight color</h2>
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<p [appInputdirective]="color" defaultColor="violet">This Demo is to check @Input event is working!!</p>
